@@ -14,6 +14,9 @@
 		7D418E871A79743900A06336 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D418E861A79743900A06336 /* Images.xcassets */; };
 		7D418E8A1A79743900A06336 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D418E881A79743900A06336 /* LaunchScreen.xib */; };
 		7D418E961A79743900A06336 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D418E951A79743900A06336 /* FoodTrackerTests.swift */; };
+		7D418EA01A7974DA00A06336 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D418E9F1A7974DA00A06336 /* DetailViewController.swift */; };
+		7D418EA21A79FDA700A06336 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D418EA11A79FDA700A06336 /* DataController.swift */; };
+		7D418EA41A7A0D3700A06336 /* USDAItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D418EA31A7A0D3700A06336 /* USDAItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		7D418E8F1A79743900A06336 /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D418E941A79743900A06336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D418E951A79743900A06336 /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
+		7D418E9F1A7974DA00A06336 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7D418EA11A79FDA700A06336 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7D418EA31A7A0D3700A06336 /* USDAItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USDAItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,13 @@
 			children = (
 				7D418E7C1A79743900A06336 /* AppDelegate.swift */,
 				7D418E811A79743900A06336 /* ViewController.swift */,
+				7D418EA11A79FDA700A06336 /* DataController.swift */,
+				7D418E9F1A7974DA00A06336 /* DetailViewController.swift */,
 				7D418E831A79743900A06336 /* Main.storyboard */,
 				7D418E861A79743900A06336 /* Images.xcassets */,
 				7D418E881A79743900A06336 /* LaunchScreen.xib */,
 				7D418E7E1A79743900A06336 /* FoodTracker.xcdatamodeld */,
+				7D418EA31A7A0D3700A06336 /* USDAItem.swift */,
 				7D418E7A1A79743900A06336 /* Supporting Files */,
 			);
 			path = FoodTracker;
@@ -164,6 +173,7 @@
 				TargetAttributes = {
 					7D418E761A79743900A06336 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = KQ4JVDRQAX;
 					};
 					7D418E8E1A79743900A06336 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -215,9 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D418EA21A79FDA700A06336 /* DataController.swift in Sources */,
 				7D418E821A79743900A06336 /* ViewController.swift in Sources */,
 				7D418E801A79743900A06336 /* FoodTracker.xcdatamodeld in Sources */,
+				7D418EA41A7A0D3700A06336 /* USDAItem.swift in Sources */,
 				7D418E7D1A79743900A06336 /* AppDelegate.swift in Sources */,
+				7D418EA01A7974DA00A06336 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +424,7 @@
 				7D418E9B1A79743900A06336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D418E9C1A79743900A06336 /* Build configuration list for PBXNativeTarget "FoodTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +433,7 @@
 				7D418E9E1A79743900A06336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
